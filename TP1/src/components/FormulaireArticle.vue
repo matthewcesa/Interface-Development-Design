@@ -1,7 +1,7 @@
 <script setup>
 import { reactive, ref } from 'vue'
 import { useRouter } from 'vue-router'
-
+import { addArticle } from '../data/articles'
 
 const router = useRouter()
 const confirmation = ref('')
@@ -20,13 +20,13 @@ function submitArticle() {
 <template>
   <form class="form" @submit.prevent="submitArticle">
     <p class="eyebrow">Administration</p>
-    <h1>Ajouter un article</h1>
+    <h1>Add an article</h1>
     <p v-if="confirmation" class="confirmation">{{ confirmation }}</p>
-    <label>Titre <input v-model="form.title" required type="text" placeholder="Titre de l’article" /></label>
-    <label>Catégorie <select v-model="form.category"><option>Design</option><option>Développement</option><option>Produit</option></select></label>
-    <label>Prix <input v-model="form.price" required type="text" placeholder="24,90 €" /></label>
+    <label>Title <input v-model="form.title" required type="text" placeholder="Titre de l’article" /></label>
+    <label>Category <select v-model="form.category"><option>Computer</option><option>Phone</option><option>Tablet</option><option>Watch</option></select></label>
+    <label>Price <input v-model="form.price" required type="text" placeholder="24,90 €" /></label>
     <label>Description <textarea v-model="form.description" required rows="5" placeholder="Présentez l’article" /></label>
-    <button type="submit">Enregistrer</button>
+    <button type="submit">Register</button>
   </form>
 </template>
 

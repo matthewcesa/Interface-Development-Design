@@ -1,11 +1,11 @@
 import { ref } from 'vue'
 
 export const articles = ref([
-  { id: 1, title: 'Macbook air m5', category: 'Ordinateur', price: '1024,90 €', description: 'Le meilleur ordinateur niveau qualité prix' },
-  { id: 2, title: 'Samsung galaxy s9', category: 'Portable', price: '529,90 €', description: 'LE portable dernière génération' },
-  { id: 3, title: 'Ipad ai m2', category: 'Tablette', price: '519,90 €', description: 'Votre enfant rentre en supérieur ? Voila pour vous' },
-  { id: 4, title: 'Ordinateur asus', category: 'Ordinateur', price: '422,90 €', description: 'Un ordinateur peu cher' },
-  { id: 5, title: 'Gaalxy watch t4', category: 'Montre', price: '231,90 €', description: 'Tout pour le sport' },
+  { id: 1, title: 'Macbook air m5', category: 'Computer', price: '1024,90 €', description: 'All-day battery life, portability, web development, and long-term durability.' },
+  { id: 2, title: 'Samsung galaxy s9', category: 'Phone', price: '529,90 €', description: 'The phone to get' },
+  { id: 3, title: 'Ipad ai m2', category: 'Tablet', price: '519,90 €', description: 'Your child enrolls to a university ? Get this item.' },
+  { id: 4, title: 'Ordinateur asus', category: 'Computer', price: '422,90 €', description: 'A low-cost computer' },
+  { id: 5, title: 'Gaalxy watch t4', category: 'Watch', price: '231,90 €', description: 'Everything on your wrist' },
 ])
 
 export function addArticle(article) {

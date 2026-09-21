@@ -7,7 +7,7 @@ defineProps({ article: { type: Object, required: true } })
     <p>{{ article.category }}</p>
     <h2>{{ article.title }}</h2>
     <strong>{{ article.price }}</strong>
-    <RouterLink :to="{ name: 'ArticleDetail', params: { id: article.id } }">Consulter</RouterLink>
+    <RouterLink :to="{ name: 'ArticleDetail', params: { id: article.id } }">Consult</RouterLink>
   </article>
 </template>
 

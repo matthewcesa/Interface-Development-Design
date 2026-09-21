@@ -18,20 +18,20 @@ function emptyCart() {
 
 <template>
   <section>
-    <p class="eyebrow">Votre sélection</p>
-    <h1>Panier</h1>
+    <p class="eyebrow">Your selection</p>
+    <h1>Cart</h1>
     <template v-if="items.length">
       <ul class="cart-list">
         <li v-for="item in items" :key="item.id">
           <span>{{ item.title }} × {{ item.quantity }}</span>
-          <button type="button" @click="removeFromCart(item)">Retirer</button>
+          <button type="button" @click="removeFromCart(item)">Delete item</button>
         </li>
       </ul>
-      <button type="button" @click="emptyCart">Vider le panier</button>
+      <button type="button" @click="emptyCart">Empty the cart</button>
     </template>
     <template v-else>
-      <p>Votre panier est vide pour le moment.</p>
-      <RouterLink to="/articles">Parcourir les articles</RouterLink>
+      <p>Your cart is empty.</p>
+      <RouterLink to="/articles">Browse our articles</RouterLink>
     </template>
   </section>
 </template>

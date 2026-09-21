@@ -16,16 +16,16 @@ const visibleArticles = computed(() => props.articles.slice((props.currentPage -
 </script>
 
 <template>
-  <p v-if="!articles.length">Aucun article trouvé.</p>
+  <p v-if="!articles.length">No article found.</p>
 
   <div v-else class="article-grid">
     <ArticleItem v-for="article in visibleArticles" :key="article.id" :article="article" />
   </div>
 
   <div v-if="totalPages > 1" class="pagination">
-    <button type="button" :disabled="currentPage === 1" @click="emit('page-change', currentPage - 1)">Précédent</button>
+    <button type="button" :disabled="currentPage === 1" @click="emit('page-change', currentPage - 1)">Previous</button>
     <span>Page {{ currentPage }} / {{ totalPages }}</span>
-    <button type="button" :disabled="currentPage === totalPages" @click="emit('page-change', currentPage + 1)">Suivant</button>
+    <button type="button" :disabled="currentPage === totalPages" @click="emit('page-change', currentPage + 1)">Next</button>
   </div>
 </template>
 

@@ -1,6 +1,9 @@
 # TP1
 
-This project was done for a course : Interface development and design in my second year at EFREI Paris.
+# Overview
+A web application built for the Interface Development and Design module during my 2nd year at EFREI Paris.
+
+The idea was to create a mini Vue.js application that allows displaying, searching, adding, and deleting articles while navigating between different pages using Vue Router.
 
 ## Project Setup
 
@@ -14,27 +17,18 @@ npm install
 npm run dev
 ```
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-## The requirements
-Create a mini Vue.js application that allows displaying, searching, adding, and deleting articles while navigating between different pages using Vue Router.
-
 ## Project structure
 ```text
 TP1/
 ├── router/
-│   └── index.js       # Routes de l'application
+│   └── index.js     # the app routes
 └── src/
-  ├── App.vue        # Structure principale de l'application
-  ├── main.js        # Initialisation de l'application Vue
-  ├── components/    # Composants réutilisables
-  ├── composables/   # Logique réutilisable
-  ├── data/          # Données des articles
-  └── views/         # Pages de l'application
+  ├── App.vue        # principal structure of the app
+  ├── main.js        # vue application initalizator
+  ├── components/    # reusable components
+  ├── composables/   # logical component (named composables)
+  ├── data/          # Local memory stored in the cache
+  └── views/         # differents views/pages of the application
 ```
 
 ## Admin page

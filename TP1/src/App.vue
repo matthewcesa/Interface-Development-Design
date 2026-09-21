@@ -1,14 +1,17 @@
 <script setup>
+import { RouterLink, RouterView } from 'vue-router'
+import { useCart } from './composables/useCart'
 
+const { count } = useCart()
 </script>
 
 <template>
   <header class="app-header">
-    <RouterLink class="brand" to="/">ArticleHub</RouterLink>
+    <RouterLink class="brand" to="/">Fnac</RouterLink>
     <nav aria-label="Navigation principale">
       <RouterLink to="/articles">Articles</RouterLink>
-      <RouterLink to="/panier">Panier ()</RouterLink>
-      <RouterLink to="/admin">Administration</RouterLink>
+      <RouterLink to="/panier">Cart ({{ count }})</RouterLink>
+      <RouterLink to="/admin">Administratiozxn</RouterLink>
     </nav>
   </header>
 
